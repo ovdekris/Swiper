@@ -3,22 +3,25 @@ import 'swiper/css';
 import "swiper/swiper-bundle.min.css"
 import {SwiperButtonNext} from "./ButtonNext/SwiperButtonNext";
 import {SwiperButtonPrev} from "./ButtonPrev/SwiperButtonPrev";
-export default function Slider(){
+import { EffectFade } from 'swiper';
+import img1 from "../image1.jpeg";
+import img2 from "../image2.png";
+import {Navigation} from "swiper";
+import 'swiper/css/navigation';
+export default function Slider(props){
+    console.log(props.props[0])
     return(
     <Swiper
-        spaceBetween={50}
+        loop={true}
         slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+        modules={[Navigation]}
+        navigation={true}
+        spaceBetween={10}
+
     >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperButtonNext/>
-        <SwiperButtonPrev/>
+        {/*<p>{`"${props.props[0]}"`}</p>*/}
+        {/*<SwiperSlide ><img src={props.props[0]} alt=""/></SwiperSlide>*/}
+
     </Swiper>)
+
 }
