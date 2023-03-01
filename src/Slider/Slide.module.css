@@ -1,0 +1,22 @@
+.container{
+    max-width: 1280px;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+.slider{
+    width: 80%;
+    height: 600px;
+}
+.slider__container{
+    display: flex;
+    justify-content: space-between;
+}
+.slider__container__info{
+    background-color: #FEF3F2;
+    width: 50%;
+    height: 100vh;
+}
+.image{
+    width: 600px;
+    height: 600px;
+}
