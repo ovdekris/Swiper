@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
 .container{
     max-width: 1280px;
     margin-top: 30px;
-    border: 1px solid black;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .slider{
     width: 80%;
-    height: 600px;
+    height: 35rem;
 }
 .slider__container{
     display: flex;
@@ -13,10 +17,77 @@
 }
 .slider__container__info{
     background-color: #FEF3F2;
-    width: 50%;
+    width: 60%;
     height: 100vh;
 }
 .image{
-    width: 600px;
+    width: 540px;
     height: 600px;
+}
+.slider__container__info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 60px;
+    padding-right: 40px;
+}
+.slider__info__title{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-align: end;
+}
+.slider__info__email{
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.slider__info__description{
+    width: 60%;
+    text-align: end;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: dimgray;
+    font-size: 16px;
+    max-height: 120px;
+}
+.slider__info__button{
+    display: flex;
+}
+.slider__info__button button{
+  outline: none;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+.slider__info__button button:first-child{
+    width: 250px;
+    background-color: #FEF3F2;
+    border: 1px solid black;
+    margin-right: 8px;
+    font-size: 16px;
+}
+.slider__info__button button:first-child:hover{
+    cursor: pointer;
+    background-color: black;
+    width: 250px;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.slider__info__button button:nth-child(2){
+   background-color: black;
+    width: 160px;
+    color: white;
+    font-size: 16px;
+ }
+.slider__info__button button:nth-child(2):hover{
+    width: 160px;
+    background-color: #FEF3F2;
+    border: 1px solid black;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
 }
