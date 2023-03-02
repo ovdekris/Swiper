@@ -12,7 +12,7 @@ import img3 from "./img5.jpg"
 import img4 from "./img4.jpg"
 
 export default function Slider(props){
-
+    console.log(typeof(props.data[0].title))
     return(
     <Swiper
         loop={true}
